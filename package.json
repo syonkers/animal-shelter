@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js --ignore tests",
+    "client": "yarn start --prefix client",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "build": "yarn install --prefix client && yarn run build --prefix client",
+    "heroku-postbuild": "yarn run build",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "concurrently": "^3.5.0",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^1.11.0",
+    "redis": "^2.8.0",
+    "sequelize": "^6.3.5",
+    "uuid": "^3.2.1",
+    "ws": "^7.4.3"
+  }
+}

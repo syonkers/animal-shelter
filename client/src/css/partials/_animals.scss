@@ -1,0 +1,74 @@
+.animal-list {
+  background-color: $foreground-color;
+  border-radius: 5px;
+  width: 90%;
+  max-height: 800px;
+  margin: 0;
+  overflow-y: auto;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+.animal {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid lightgray;
+
+  &-avatar {
+    height: 150px;
+    max-width: 150px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    margin: 30px 40px 0 0;
+  }
+
+  &-details {
+    width: 100%;
+    display: flex;
+  }
+
+  &-inner {
+    padding-left: 10px;
+  }
+
+  &-name {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  &-content {
+    margin-bottom: 15px;
+  }
+
+  .expand-button {
+    height: 50px;
+    background: none;
+    border: none;
+    color: darkgray;
+    font-size: 4rem;
+    outline: none;
+    margin-top: 30px;
+
+    i {
+      font-size: 32px;
+    }
+
+    &:hover {
+      color: black;
+    }
+
+    &:focus {
+      color: black;
+    }
+  }
+}
